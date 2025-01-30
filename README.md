@@ -28,7 +28,7 @@ cd TG-Bot-IMEI
 
 Создайте и активируйте виртуальное окружение:
 ```bash
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate  # Для Windows используйте venv\Scripts\activate
 ```
 Установите зависимости:
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 ```bash
 TELEGRAM_TOKEN=your_telegram_bot_token
-API_TOKEN=your_imei_check_api_token
+API_TOKEN=sandbox_api_token_here
 ```
 
 - TELEGRAM_TOKEN — ваш токен для Telegram-бота.
@@ -79,4 +79,4 @@ API_TOKEN=your_imei_check_api_token
 ##### Параметры:
 
 - imei (обязательный) — строка IMEI устройства.
-- token (обязательный) — токен авторизации.
+- token (обязательный) — токен авторизации (токен API Sandbox из ТЗ).
