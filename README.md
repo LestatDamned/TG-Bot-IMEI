@@ -21,27 +21,27 @@
 ### 1. Клонировать репозиторий
 
 ```bash
-  git clone https://github.com/LestatDamned/TG-Bot-IMEI.git
-  cd TG-Bot-IMEI
+git clone https://github.com/LestatDamned/TG-Bot-IMEI.git
+cd TG-Bot-IMEI
 ```
 ### 2. Установить зависимости
 
 Создайте и активируйте виртуальное окружение:
 ```bash
-  python -m venv venv
-  source venv/bin/activate  # Для Windows используйте venv\Scripts\activate
+python -m venv venv
+source venv/bin/activate  # Для Windows используйте venv\Scripts\activate
 ```
 Установите зависимости:
 ```bash
-  pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 ### 3. Настройка переменных окружения
 
 Создайте файл `.env` в корне проекта и добавьте необходимые переменные:
 
 ```bash
-    TELEGRAM_TOKEN=your_telegram_bot_token
-    API_TOKEN=your_imei_check_api_token
+TELEGRAM_TOKEN=your_telegram_bot_token
+API_TOKEN=your_imei_check_api_token
 ```
 
 - TELEGRAM_TOKEN — ваш токен для Telegram-бота.
