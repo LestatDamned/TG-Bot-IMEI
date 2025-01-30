@@ -40,6 +40,10 @@ pip install -r requirements.txt
 Создайте файл `.env` в корне проекта и добавьте необходимые переменные:
 
 ```bash
+cp .env.example .env
+```
+
+```bash
 TELEGRAM_TOKEN=your_telegram_bot_token
 API_TOKEN=sandbox_api_token_here
 ```

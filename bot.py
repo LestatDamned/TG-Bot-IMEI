@@ -44,7 +44,7 @@ async def add_to_whitelist(msg: Message):
 async def handle_message(message: Message):
     """Принимает в чате IMEI код и делает проверку на участи в белом списке,
      валидирует IMEI, дальше отправляет запрос к API для получения информации"""
-    if not message.from_user.id in WHITELISTED_USER_IDS:
+    if message.from_user.id not in WHITELISTED_USER_IDS:
         await message.answer(f"Вас нет в белом списке")
         return
 
